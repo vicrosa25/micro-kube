@@ -16,7 +16,7 @@ public class UserController {
 
     private final UserService userService;
 
-    @GetMapping
+    @GetMapping("/")
     public List<User> getAllUser() {
         return userService.findAll();
     }
@@ -30,7 +30,7 @@ public class UserController {
             return ResponseEntity.ok(optionalUser.get());
     }
 
-    @PostMapping
+    @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
     public User createUser(@RequestBody User user) {
         return userService.save(user);

@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: micro-course
+server:
+  port: 8002

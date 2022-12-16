@@ -1,4 +1,5 @@
 rootProject.name = 'spring-cloud-kubernetes'
 
 include 'micro-usuario'
+include 'micro-course'
 
